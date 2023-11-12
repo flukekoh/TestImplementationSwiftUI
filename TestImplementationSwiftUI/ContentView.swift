@@ -12,9 +12,11 @@ struct ContentView: View {
         ZStack {
             BackgroundView(topColor: .blue, bottomColor: Color("lightBlue"))
             VStack {
+                
                 CityTextView(cityName: "Cupertino, CA")
                 
                 MainWeatherStatusView(imageName: "cloud.sun.fill", temperature: 76)
+                
                 HStack(spacing: 20) {
                     WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 74)
                     WeatherDayView(dayOfWeek: "WED", imageName: "sun.max.fill", temperature: 88)
